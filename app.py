@@ -217,7 +217,7 @@ def editComplete():
    newPrice = float(request.form.get("newPrice"))
 
    with open("products.json", "r") as f:
-      data = json.load(f)
+      data = json.load(f)f
 
    data[productID]["title"] = newTitle
    data[productID]["description"] = newDescription
